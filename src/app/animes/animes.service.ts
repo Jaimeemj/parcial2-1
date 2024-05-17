@@ -7,7 +7,7 @@ import { Animes } from './animes';
   providedIn: 'root'
 })
 export class AnimesService {
-private apiUrl:string = environment.baseUrl+'animes';
+private apiUrl:string = environment.baseUrl;
 constructor(private http:HttpClient) { }
 
 getAnimes(): Observable<Animes[]> {
